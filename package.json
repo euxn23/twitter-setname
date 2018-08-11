@@ -1,0 +1,35 @@
+{
+  "name": "twitter-setname",
+  "version": "0.1.0",
+  "description": "userstream-based set name twitter bot",
+  "bin": {
+    "twitter-setname": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "fmt": "prettier --write \"./**/*.js\"",
+    "start": "pm2 start index.js",
+    "test": "prettier --list-different \"./**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euxn23/twitter-setname.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "euxn23",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/euxn23/twitter-setname/issues"
+  },
+  "homepage": "https://github.com/euxn23/userstream-setname#readme",
+  "devDependencies": {
+    "pm2": "^3.0.3",
+    "prettier": "^1.14.2",
+    "prettier-cli": "^0.1.0"
+  },
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
